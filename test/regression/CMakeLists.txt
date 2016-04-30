@@ -6,15 +6,9 @@
 ##                            http://www.boost.org/LICENSE_1_0.txt
 ##===================================================================================================
 
-include(${CMAKE_CURRENT_LIST_DIR}/setup.cmake)
-NS_include(make_unit)
-NS_include(make_coverage)
+set ( SOURCES
+      issue_18.cpp
+    )
 
-set(CMAKE_BUILD_TYPE "Debug")
-
-## Add all test folders
-add_subdirectory(api)
-add_subdirectory(architecture)
-add_subdirectory(constant)
-add_subdirectory(function)
-add_subdirectory(regression)
+make_unit( "regression" ${SOURCES})
+make_coverage("regression" ${SOURCES})
