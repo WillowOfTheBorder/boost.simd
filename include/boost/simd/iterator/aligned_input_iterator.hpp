@@ -7,8 +7,8 @@
 //                 See accompanying file LICENSE.txt or copy at
 //                     http://www.boost.org/LICENSE_1_0.txt
 //==============================================================================
-#ifndef BOOST_SIMD_MEMORY_ALIGNED_INPUT_ITERATOR_HPP_INCLUDED
-#define BOOST_SIMD_MEMORY_ALIGNED_INPUT_ITERATOR_HPP_INCLUDED
+#ifndef BOOST_SIMD_ITERATOR_ALIGNED_INPUT_ITERATOR_HPP_INCLUDED
+#define BOOST_SIMD_ITERATOR_ALIGNED_INPUT_ITERATOR_HPP_INCLUDED
 
 #include <boost/simd/function/aligned_load.hpp>
 #include <boost/simd/pack.hpp>

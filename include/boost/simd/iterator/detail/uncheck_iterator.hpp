@@ -7,8 +7,8 @@
 //                 See accompanying file LICENSE.txt or copy at
 //                     http://www.boost.org/LICENSE_1_0.txt
 //==============================================================================
-#ifndef BOOST_SIMD_MEMORY_DETAILS_UNCHECK_ITERATOR_HPP_INCLUDED
-#define BOOST_SIMD_MEMORY_DETAILS_UNCHECK_ITERATOR_HPP_INCLUDED
+#ifndef BOOST_SIMD_ITERATOR_DETAILS_UNCHECK_ITERATOR_HPP_INCLUDED
+#define BOOST_SIMD_ITERATOR_DETAILS_UNCHECK_ITERATOR_HPP_INCLUDED
 
 #include <boost/dispatch/meta/enable_if_type.hpp>
 #include <boost/config.hpp>
