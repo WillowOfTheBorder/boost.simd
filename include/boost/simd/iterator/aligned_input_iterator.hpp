@@ -18,6 +18,7 @@
 #include <boost/iterator/iterator_adaptor.hpp>
 #include <boost/core/ignore_unused.hpp>
 #include <boost/config.hpp>
+#include <boost/align/is_aligned.hpp>
 #include <iterator>
 
 namespace boost { namespace simd
