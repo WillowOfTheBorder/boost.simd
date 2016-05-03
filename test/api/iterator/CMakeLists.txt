@@ -15,7 +15,7 @@ SET( SOURCES
 #    direct_output_iterator.cpp
     input_iterator.cpp
 #    input_range.cpp
-#    output_iterator.cpp
+    output_iterator.cpp
 #    output_range.cpp
 #    realigned_input_range.cpp
 #    realigned_output_range.cpp
