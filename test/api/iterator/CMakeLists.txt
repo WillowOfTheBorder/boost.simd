@@ -13,7 +13,7 @@ SET( SOURCES
     aligned_output_iterator.cpp
     aligned_output_range.cpp
 #    direct_output_iterator.cpp
-#    input_iterator.cpp
+    input_iterator.cpp
 #    input_range.cpp
 #    output_iterator.cpp
 #    output_range.cpp
