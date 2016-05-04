@@ -7,8 +7,8 @@
 //                 See accompanying file LICENSE.txt or copy at
 //                     http://www.boost.org/LICENSE_1_0.txt
 //==============================================================================
-#ifndef BOOST_SIMD_MEMORY_INPUT_RANGE_HPP_INCLUDED
-#define BOOST_SIMD_MEMORY_INPUT_RANGE_HPP_INCLUDED
+#ifndef BOOST_SIMD_ITERATOR_INPUT_RANGE_HPP_INCLUDED
+#define BOOST_SIMD_ITERATOR_INPUT_RANGE_HPP_INCLUDED
 
 #include <boost/simd/iterator/input_iterator.hpp>
 #include <boost/align/is_aligned.hpp>
