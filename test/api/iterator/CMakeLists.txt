@@ -18,7 +18,7 @@ SET( SOURCES
     output_iterator.cpp
     output_range.cpp
     realigned_input_range.cpp
-#    realigned_output_range.cpp
+    realigned_output_range.cpp
 #    shifted_iterator.cpp
   )
 
