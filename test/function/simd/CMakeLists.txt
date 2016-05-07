@@ -24,6 +24,7 @@ abs_s.cpp
 aligned_load.cpp
 aligned_store.cpp
 all.cpp
+any.cpp
 arg.cpp
 autofold.cpp
 automap.cpp
@@ -190,6 +191,7 @@ negifnot.cpp
 neg_s.cpp
 nextafter.cpp
 next.cpp
+none.cpp
 nthroot.cpp
 oneminus.cpp
 oneminus_s.cpp
