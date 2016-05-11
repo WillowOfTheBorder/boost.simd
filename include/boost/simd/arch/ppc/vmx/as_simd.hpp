@@ -11,10 +11,10 @@
 
 **/
 //==================================================================================================
-#ifndef BOOST_SIMD_ARCH_POWER_VMX_AS_SIMD_HPP_INCLUDED
-#define BOOST_SIMD_ARCH_POWER_VMX_AS_SIMD_HPP_INCLUDED
+#ifndef BOOST_SIMD_ARCH_PPC_VMX_AS_SIMD_HPP_INCLUDED
+#define BOOST_SIMD_ARCH_PPC_VMX_AS_SIMD_HPP_INCLUDED
 
-#include <boost/simd/arch/power/tags.hpp>
+#include <boost/simd/arch/ppc/tags.hpp>
 #include <boost/simd/arch/common/simd/as_simd.hpp>
 #include <boost/dispatch/meta/is_natural.hpp>
 #include <boost/dispatch/meta/sign_of.hpp>
