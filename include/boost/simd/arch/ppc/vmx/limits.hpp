@@ -1,14 +1,9 @@
 //==================================================================================================
-/*!
-  @file
-
-  Aggregate SIMD numerical and type limits for PPC VMX
-
-  @copyright 2012 - 2015 NumScale SAS
+/**
+  Copyright 2016 NumScale SAS
 
   Distributed under the Boost Software License, Version 1.0.
   (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
-
 **/
 //==================================================================================================
 #ifndef BOOST_SIMD_ARCH_PPC_VMX_LIMITS_HPP_INCLUDED
@@ -16,8 +11,8 @@
 
 #include <boost/simd/arch/ppc/tags.hpp>
 #include <boost/simd/arch/common/limits.hpp>
-#include <boost/dispatch/meta/make_integer.hpp>
 #include <boost/simd/detail/brigand.hpp>
+#include <boost/dispatch/meta/make_integer.hpp>
 #include <cstdint>
 
 namespace boost { namespace simd
@@ -44,4 +39,3 @@ namespace boost { namespace simd
 } }
 
 #endif
-

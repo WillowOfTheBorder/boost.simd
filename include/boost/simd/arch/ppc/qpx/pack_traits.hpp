@@ -1,31 +1,31 @@
 //==================================================================================================
 /**
-  Copyright 2012 - 2015 NumScale SAS
+  Copyright 2015 NumScale SAS
 
   Distributed under the Boost Software License, Version 1.0.
   (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
 **/
 //==================================================================================================
-#ifndef BOOST_SIMD_ARCH_X86_SSE1_AS_SIMD_HPP_INCLUDED
-#define BOOST_SIMD_ARCH_X86_SSE1_AS_SIMD_HPP_INCLUDED
+#ifndef BOOST_SIMD_ARCH_PPC_QPX_PACK_TRAITS_HPP_INCLUDED
+#define BOOST_SIMD_ARCH_PPC_QPX_PACK_TRAITS_HPP_INCLUDED
 
+#include <boost/config.hpp>
 #include <boost/simd/arch/common/simd/as_simd.hpp>
-#include <boost/simd/arch/x86/tags.hpp>
+#include <boost/simd/detail/pack_traits.hpp>
 
 namespace boost { namespace simd
 {
-  template<typename T> struct logical;
+  namespace detail
+  {
+    BOOST_SIMD_DEFINE_PACK_TRAITS(double,  4, vector4double   );
+  }
 
   namespace ext
   {
-    template<> struct as_simd<float, boost::simd::sse_>
+    template<typename Enable> struct abi_of<double,2,Enable>
     {
-      using type = __m128;
+      using type = ::boost::simd::vsx_;
     };
-
-    template<typename T>
-    struct  as_simd<logical<T>, boost::simd::sse_>
-          : as_simd<T, boost::simd::sse_> {};
   }
 } }
 
