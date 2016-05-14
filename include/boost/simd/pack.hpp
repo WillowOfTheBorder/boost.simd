@@ -19,13 +19,13 @@
 #include <boost/simd/detail/storage_of.hpp>
 #include <boost/simd/meta/is_power_of_2.hpp>
 #include <boost/simd/meta/is_not_scalar.hpp>
-#include <boost/simd/function/aligned_load.hpp>
+// #include <boost/simd/function/aligned_load.hpp>
 #include <boost/simd/function/extract.hpp>
 #include <boost/simd/function/insert.hpp>
-#include <boost/simd/function/splat.hpp>
-#include <boost/simd/function/load.hpp>
-#include <boost/simd/function/inc.hpp>
-#include <boost/simd/function/dec.hpp>
+// #include <boost/simd/function/splat.hpp>
+// #include <boost/simd/function/load.hpp>
+// #include <boost/simd/function/inc.hpp>
+// #include <boost/simd/function/dec.hpp>
 #include <boost/utility/enable_if.hpp>
 #include <boost/align/is_aligned.hpp>
 #include <boost/config.hpp>
@@ -103,9 +103,9 @@ namespace boost { namespace simd
 
       @param ptr Pointer to load from
     **/
-    BOOST_FORCEINLINE explicit pack(T const* ptr) BOOST_NOEXCEPT
-                              : data_( boost::simd::aligned_load<pack>(ptr).storage() )
-    {}
+    // BOOST_FORCEINLINE explicit pack(T const* ptr) BOOST_NOEXCEPT
+    //                           : data_( boost::simd::aligned_load<pack>(ptr).storage() )
+    // {}
 
     /*!
       @brief Construct a pack from a range of element
@@ -119,12 +119,12 @@ namespace boost { namespace simd
       @param b Beginning of the range to load from
       @param e End of the range to load from
     **/
-    template < typename Iterator
-             , typename = typename std::enable_if<is_not_scalar<Iterator>::value>::type
-             >
-    BOOST_FORCEINLINE pack(Iterator b, Iterator e)
-                    : data_( boost::simd::load<pack>(b,e).storage() )
-    {}
+    // template < typename Iterator
+    //          , typename = typename std::enable_if<is_not_scalar<Iterator>::value>::type
+    //          >
+    // BOOST_FORCEINLINE pack(Iterator b, Iterator e)
+    //                 : data_( boost::simd::load<pack>(b,e).storage() )
+    // {}
 
     /*!
       @brief Construct a pack from a set of scalar values
@@ -138,24 +138,24 @@ namespace boost { namespace simd
       @param v1 Second scalar value to insert
       @param vn Remaining scalar values to insert
     **/
-    template <typename T0, typename T1, typename... Ts>
-    BOOST_FORCEINLINE pack(T0 const& v0, T1 const& v1, Ts const&... vn)
-    {
-      static_assert( 2 + sizeof...(vn) == static_size
-                   , "pack<T,N>(T v...) must take exactly N arguments"
-                   );
+    // template <typename T0, typename T1, typename... Ts>
+    // BOOST_FORCEINLINE pack(T0 const& v0, T1 const& v1, Ts const&... vn)
+    // {
+    //   static_assert( 2 + sizeof...(vn) == static_size
+    //                , "pack<T,N>(T v...) must take exactly N arguments"
+    //                );
 
-      data_ = boost::simd::make<pack>(v0,v1,vn...).storage();
-    }
+    //   data_ = boost::simd::make<pack>(v0,v1,vn...).storage();
+    // }
 
     /*!
       @brief Construct a pack by replicating a scalar value
 
       @param value The value to replicate
     **/
-    BOOST_FORCEINLINE explicit pack(T const& value) BOOST_NOEXCEPT
-                      : data_( boost::simd::splat<pack>(value).storage() )
-    {}
+    // BOOST_FORCEINLINE explicit pack(T const& value) BOOST_NOEXCEPT
+    //                   : data_( boost::simd::splat<pack>(value).storage() )
+    // {}
 
     /// @brief Pack assignment operator
     BOOST_FORCEINLINE pack& operator=(pack const& rhs) BOOST_NOEXCEPT
@@ -374,6 +374,6 @@ namespace boost { namespace simd
 } }
 
 #include <boost/simd/detail/pack_info.hpp>
-#include <boost/simd/detail/pack_operators.hpp>
+//#include <boost/simd/detail/pack_operators.hpp>
 
 #endif

@@ -10,7 +10,10 @@
 //==================================================================================================
 #ifndef BOOST_SIMD_DETAIL_OVERLOAD_HPP_INCLUDED
 #define BOOST_SIMD_DETAIL_OVERLOAD_HPP_INCLUDED
+
 #include <boost/simd/config.hpp>
 #include <boost/simd/meta/hierarchy/simd.hpp>
 #include <boost/dispatch/function/overload.hpp>
+#include <boost/dispatch/hierarchy.hpp>
+
 #endif
